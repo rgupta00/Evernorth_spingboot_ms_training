@@ -1457,6 +1457,38 @@ public class CustomEndpoints {
 Getting started with mongodb:
 ----------------------------
 
+What is MongoDB?
+--------------
+	MongoDB is a high-performance NoSQL database where each 
+	database has collections which in turn has documents. 
+	
+	Each document has a different number of fields, size, content, and is 
+	stored in a JSON-like format (i.e. Binary JSON (BSN)
+	
+	The documents in MongoDB doesn’t need to have a schema defined beforehand. 
+	Instead, the fields (i.e. records) can be created on the go
+	
+	Data model available within the MongoDB allows developers to represent the 
+	hierarchical relationships, store arrays, and other more complex structures easily
+	
+	This NoSQL solution often comes with embedding, auto-sharding, 
+	and onboard replication for better scalability and high availability
+	
+Why MongoDB?
+-----------
+	As a NoSQL type database, MongoDB stores the data in the form of a document.
+	Thus, MongoDB offers more flexibility
+	
+	This database supports search by field-name, range queries, and the regular expressions. 
+	
+	It often provides queries to return the particular fields inside the documents
+	MongoDB offers indexes to improve the search performance within the NoSQL database
+	To offer horizontal scalability, MongoDB uses sharding by splitting the 
+	data across the many MongoDB occurrences
+	
+	Replication: MongoDB can give high availability with the replica sets
+
+
 docker-compose.yml
 ---------------
 version: '4'
@@ -1520,6 +1552,7 @@ db.students.drop();
 Creating collections, document, storing data etc
 --------------------------------------------
 user rajdb;
+db.students.insertOne({Name: "Akshay", Marks: 500})
 db.students.insertOne({"name":"ram","age":12}};
 db.students.insertOne({"name":"ram","age":13}};
 
@@ -1533,6 +1566,29 @@ add some records:
 
 db.students.insertOne({"name":"ram","age":12}};
 db.students.insertOne({"name":"ram","age":13}};
+
+db.stduents.insertMany([
+	{
+		"name":"ram",
+		"age" :1
+	},
+		{
+		"name":"shyam",
+		"age" :7
+	},
+		{
+		"name":"sita",
+		"age" :6
+	},
+		{
+		"name":"naresh",
+		"age" :12
+	},
+		{
+		"name":"umesh",
+		"age" :13
+	}
+]);
 
 
 Embedded documents in mongodb:

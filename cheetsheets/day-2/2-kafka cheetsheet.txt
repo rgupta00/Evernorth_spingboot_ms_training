@@ -126,7 +126,7 @@ kafka-topics --bootstrap-server kafka1:19092 --alter --topic test-topic --partit
 Now start 2 consumers:
 --------------------
 docker exec -it kafka1 bash 
-kafka-console-consumer --bootstrap-server kafka1:19092 --topic test-topic --group console-consumer-19685 --property "key.separator= - " --property "print.key=true"
+kafka-console-consumer --bootstrap-server kafka1:19092 --topic test-topic --group console-consumer-15332 --property "key.separator= - " --property "print.key=true"
 
 
 
@@ -259,31 +259,6 @@ kafka-topics --bootstrap-server kafka1:19092 --describe
 			
 	
 
-Log files in Multi Kafka Cluster
-Log files will be created for each partition in each of the broker instance of the Kafka cluster.
-Login to the container kafka1.
-docker exec -it kafka1 bash
-Login to the container kafka2.
-docker exec -it kafka2 bash
-Shutdown the kafka cluster
-docker-compose -f docker-compose-multi-broker.yml down
-Setting up min.insync.replica
-Topic - test-topic
-docker exec --interactive --tty kafka1  \
-kafka-configs  --bootstrap-server localhost:9092 --entity-type topics --entity-name test-topic \
---alter --add-config min.insync.replicas=2
-Topic - library-events
-docker exec --interactive --tty kafka1  \
-kafka-configs  --bootstrap-server localhost:9092 --entity-type topics --entity-name library-events \
---alter --add-config min.insync.replicas=2
-
-
-
-docker exec -it kafka1 bash 
-kafka-run-class kafka.tools.DumpLogSegments --deep-iteration --files /var/lib/kafka/data/test-topic-0/00000000000000000000.log
-
-	
-
 
 
 
@@ -304,10 +279,6 @@ spring:
       bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-#      properties:
-#        acks: all
-#        retries: 10
-#        retry.backoff.max.ms: 1000
     admin:
       properties:
         bootstrap.servers: localhost:9092,localhost:9093,localhost:9094
