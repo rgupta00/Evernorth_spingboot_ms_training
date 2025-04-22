@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: testdb
+  application:
+    name: productappv1
+server:
+  port: 8090
+  servlet:
+    context-path: /productapp
+
+profile:
+  data: "default profile"
+
+account:
+  message: "welcome to productapp account manager"
+  contactDetails:
+    name: "raj"
+    email: "rgupta.mtech@gmail.com"
+  onCallSupport:
+    -54645464556
+    -75765777677

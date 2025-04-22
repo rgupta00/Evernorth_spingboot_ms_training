@@ -1,0 +1,15 @@
+package com.productapp.util;
+
+import com.productapp.dto.ProductDto;
+import com.productapp.entites.Product;
+
+public class DataConvertor {
+    public  ProductDto convertToProductDto(Product product) {
+        ProductDto productDto = new ProductDto();
+        productDto.setId(product.getId());
+        productDto.setName(product.getName());
+        productDto.setPrice(product.getPrice());
+        return productDto;
+
+    }
+}

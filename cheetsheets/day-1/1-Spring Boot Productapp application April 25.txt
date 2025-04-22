@@ -963,49 +963,6 @@ logging.file.name=/home/raj/Desktop/logs/server.log
    
 
 
-
-richardson maturity model
-_________________________
-
-Step 8: hateoas: Hypermedia as the Engine of Application State (HATEOAS)
-__________________
-
- 1: put hateoas dependencies
-
- 2: enable static improt:
-
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
-
- 3: change POJO class:
-
-public class Product extends RepresentationModel<Product> {
-} 
-
-
-
-@GetMapping(path = "productsV2/{id}")
-	public EntityModel<Product>  findByIdLink(@PathVariable(name = "id") int id){
-		Link link=linkTo(methodOn(ProductController.class).findByIdLink(id)).withSelfRel();
-		Product product=productService.getById(id);
-		product.add(link);
-		return EntityModel.of(product);
-}
-
-@GetMapping(path = "productsV2")
-	public CollectionModel<Product> findAllV2(){
-		List<Product> products=productService.findAll();
-		for(Product product: products) {
-			Link link=linkTo(methodOn(ProductController.class).findByIdLink(product.getId())).withSelfRel();
-			product.add(link);
-		}
-		return CollectionModel.of(products);
-}
-
-
-
-
-
-
 9. Using OpenAPI 3.0
 _____________________
 https://www.bezkoder.com/spring-boot-swagger-3/
@@ -1796,6 +1753,49 @@ Spring boot js
 
 
 
+
+
+
+
+
+
+
+richardson maturity model
+_________________________
+
+Step 8: hateoas: Hypermedia as the Engine of Application State (HATEOAS)
+__________________
+
+ 1: put hateoas dependencies
+
+ 2: enable static improt:
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+ 3: change POJO class:
+
+public class Product extends RepresentationModel<Product> {
+} 
+
+
+
+@GetMapping(path = "productsV2/{id}")
+	public EntityModel<Product>  findByIdLink(@PathVariable(name = "id") int id){
+		Link link=linkTo(methodOn(ProductController.class).findByIdLink(id)).withSelfRel();
+		Product product=productService.getById(id);
+		product.add(link);
+		return EntityModel.of(product);
+}
+
+@GetMapping(path = "productsV2")
+	public CollectionModel<Product> findAllV2(){
+		List<Product> products=productService.findAll();
+		for(Product product: products) {
+			Link link=linkTo(methodOn(ProductController.class).findByIdLink(product.getId())).withSelfRel();
+			product.add(link);
+		}
+		return CollectionModel.of(products);
+}
 
 
 

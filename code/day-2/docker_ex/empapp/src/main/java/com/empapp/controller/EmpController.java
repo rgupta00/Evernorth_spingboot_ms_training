@@ -14,8 +14,9 @@ public class EmpController {
     public EmpController(InstanceInformationService instanceInformationService) {
         this.instanceInformationService = instanceInformationService;
     }
+
     @GetMapping(path = "emps")
     public String hello(){
-        return "emp v4: "+ instanceInformationService.retrieveInstanceInfo();
+        return "emp v3: "+instanceInformationService.retrieveInstanceInfo();
     }
 }

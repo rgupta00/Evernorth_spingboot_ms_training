@@ -1,0 +1,14 @@
+package com.productapp.service.schedulers;
+
+import lombok.extern.log4j.Log4j2;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
+
+@Service
+@Log4j2
+public class CacheInvalidatorSchedular {
+    @Scheduled(cron = "0,10 * * * * *")
+    public void foo(){
+        log.info("-----------------------------------------------------");
+    }
+}

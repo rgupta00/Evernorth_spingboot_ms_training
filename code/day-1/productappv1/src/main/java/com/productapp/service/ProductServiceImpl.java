@@ -18,8 +18,6 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public List<Product> getAll() {
         List<Product> products= productRepo.findAll();
-        if(1==1)
-            throw new RuntimeException("some db error");
         return products;
     }
 

@@ -24,6 +24,8 @@ Intro to kubernetes
 
 What is cloud native application development?
 --------------------------------------------
+https://www.google.com/search?q=what+is+cloud+native+application&oq=what+is+cloud+native+app&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yBggHEEUYPNIBCDU1MThqMWo0qAIAsAIB&sourceid=chrome&ie=UTF-8
+
 	an approach to develop mordern s/w (folling 12 factor/15 factor app)
 	HA, Scalable, responsive, fault tolerent 
 	speed ang agility
@@ -229,7 +231,7 @@ nodes:
 
 step 2: create kind cluster
 -----------------------------
- kind create cluster --config 01-cluster.yaml
+ kind create cluster --config 01-c1.yaml
  
  to delete cluster:
   kind delete cluster --name dev-cluster
