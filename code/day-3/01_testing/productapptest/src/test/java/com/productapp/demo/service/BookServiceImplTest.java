@@ -1,0 +1,42 @@
+package com.productapp.demo.service;
+
+import com.productapp.demo.dao.BookDao;
+import com.productapp.demo.dao.BookDaoImpl;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.Spy;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+@ExtendWith(MockitoExtension.class)
+class BookServiceImplTest {
+
+//    @Mock
+//    private BookDao bookDao;
+
+    @Spy
+    private BookDaoImpl bookDao;
+
+    @InjectMocks
+    private BookServiceImpl bookService;
+
+    @Test
+    void getBooks() {
+        //given when then
+//        System.out.println(bookDao.getClass());
+//        List<String> books= Arrays.asList("java","rich dad poor dad","java adv");
+//        when(bookDao.getBooks()).thenReturn(books);
+
+        assertEquals(2,bookService.getBooks("java").size());
+
+    }
+}

@@ -1,0 +1,88 @@
+Important Spring Boot annotations with a short description of their use:
+
+@SpringBootApplication
+Combines @Configuration, @EnableAutoConfiguration, and @ComponentScan — used to mark the main application class.
+
+@RestController
+Shortcut for @Controller + @ResponseBody — used to create RESTful web services.
+
+@RequestMapping
+Maps HTTP requests to handler methods of controllers.
+
+@GetMapping / @PostMapping / @PutMapping / @DeleteMapping / @PatchMapping
+Specialized versions of @RequestMapping for specific HTTP methods.
+
+@Autowired
+Automatically injects dependencies by type.
+
+@Qualifier
+Used along with @Autowired to resolve conflict when multiple beans of the same type exist.
+
+@Component
+Marks a Java class as a Spring-managed component.
+
+@Service
+Specialization of @Component — marks a service class (typically holds business logic).
+
+@Repository
+Specialization of @Component — used on DAO (Data Access Object) classes.
+
+@Controller
+Marks a class as a Spring MVC controller.
+
+@RequestBody
+Binds the body of an HTTP request to a method parameter.
+
+@ResponseBody
+Binds a method return value to the HTTP response body.
+
+@PathVariable
+Binds a URI template variable to a method parameter.
+
+@RequestParam
+Binds a web request parameter to a method parameter.
+
+@Configuration
+Indicates that a class declares one or more @Bean methods and may be processed by Spring.
+
+@Bean
+Declares a bean to be managed by the Spring container.
+
+@Value
+Injects values into fields from property files (application.properties or application.yml).
+
+@PropertySource
+Specifies the location of a properties file.
+
+@EnableAutoConfiguration
+Tells Spring Boot to auto-configure the application based on dependencies.
+
+@EnableScheduling
+Enables support for scheduled tasks (@Scheduled methods).
+
+@Scheduled
+Marks a method to be scheduled to run at fixed intervals.
+
+@EnableCaching
+Enables caching mechanism in Spring.
+
+@Cacheable / @CachePut / @CacheEvict
+Annotations for controlling method-level caching behavior.
+
+@Transactional
+Manages database transactions automatically.
+
+@ExceptionHandler
+Defines a method to handle exceptions thrown by controller methods.
+
+@ControllerAdvice
+Global exception handling for controllers.
+
+@CrossOrigin
+Enables Cross-Origin Resource Sharing (CORS) on a method or class.
+
+@Profile
+Used to activate or deactivate a bean based on the active Spring profile.
+
+@Data (from Lombok)
+Generates getters, setters, toString(), equals(), and hashCode() methods automatically.

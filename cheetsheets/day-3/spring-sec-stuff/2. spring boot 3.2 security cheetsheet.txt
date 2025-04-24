@@ -796,7 +796,3 @@ public class SecConfig {
 }
 
 
-Ref:
------
-for csrf 
-https://www.javainuse.com/spring/boot_security_csrf

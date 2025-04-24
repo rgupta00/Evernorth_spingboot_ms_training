@@ -271,6 +271,7 @@ step 2: create kind cluster
   docker ps
   
   docker exec -it <cid> bash		now we are inside the master node
+  7c55ae88bdbd
   
   cd /etc/kubernetes/manifests
   ls -l				will display all yaml file related to master node
@@ -819,7 +820,7 @@ kubectl apply -f 02-deploy-rs.yaml
 kubectl get all
 
 exec inside pod
-kubectl exec -it pod/my-deploy-5c5b7bc6d7-bvwpc bash
+kubectl exec -it pod/empapp-deploy-849f84986f-ghntk bash
 
 kubectl get deployment
 
@@ -1229,12 +1230,42 @@ spec:
 
 understanding kube-system 
 -----------------------------
+	kube-system is one of the default namespaces used to organize and manage resources,
+	particularly those related to the internal workings of the Kubernetes cluster itself.
+
+	What is a Namespace in Kubernetes?
+			A namespace is a way to divide cluster resources between multiple users or applications.
+			It helps isolate and organize workloads.
+
+	What is kube-system?
+			The kube-system namespace is where Kubernetes runs its core system components, such as:
+
+			kube-dns or CoreDNS: Handles DNS resolution for services.
+			kube-proxy: Maintains network rules on nodes.
+			etcd: The distributed key-value store used by Kubernetes (in some setups).
+			kube-apiserver, kube-controller-manager, kube-scheduler: Core control plane components (usually in managed Kubernetes).
+			CNI plugins (like Calico, Flannel) for networking.
+			Cloud controller manager (in cloud environments).
+
+	Why is it important?
+		Understanding kube-system helps with:
+		Troubleshooting cluster-level issues.
+		Monitoring the health of Kubernetes itself.
+		Avoiding accidental deletion or modification of system-critical pods or services.
+
+Tips:
+		Don’t deploy your applications in kube-system. Use custom namespaces instead.
+
+		Use kubectl get pods -n kube-system to inspect the system pods.
+		kubectl get pod -n kube-system 
+
+
 
 kubectl get pod -n kube-system 
 
-it gives lods of pod running under kube-system as pod
-kindnet is CNI plugin to provide networking amongs different nodes
-CoreDNS is a dns server translate logical name to ip address
+		it gives lots of pod running under kube-system as pod
+		kindnet is CNI plugin to provide networking amongs different nodes
+		CoreDNS is a dns server translate logical name to ip address
 
 NAME                                                READY   STATUS    RESTARTS   AGE
 coredns-5d78c9869d-jhzcl                            1/1     Running   0          4h12m
@@ -1534,6 +1565,8 @@ kubectl get cm
  
  kubectl apply -f .\03-inject-cm-as-file.yaml
  
+ 
+ 
 03-inject-cm-as-file.yaml:
 ------------------------
 apiVersion: v1
@@ -1651,6 +1684,55 @@ kubectl logs my-pod
 
 
 
+Ingress:
+---------
+ What is Ingress in Kubernetes?
+		Ingress is like the main door to your Kubernetes cluster. 
+		It helps you control who can access your apps running 
+		inside the cluster — especially from outside the cluster (the internet).
+
+	Without Ingress:
+		Every app (or service) needs its own public IP or LoadBalancer to be accessible. 
+		That can get expensive and messy.
+
+	With Ingress:
+		You can have one public entry point, and then let Kubernetes 
+		route the traffic to the correct app inside.
+
+Like a receptionist who takes a visitor to the right office.
+
+
+Step 1:
+
+Nginx Ingress Controller
+Applying below resource:
+
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+
+
+delete old cluster to create new one:
+
+ kind delete cluster --name dev-cluster
+
+create new cluster:
+ kind create cluster --config .\01-cluster.yaml
+ 
+ docker ps
+ 
+ Example1:02-simple-ingress
+ -------------------
+ 
+  kubectl get ing
+  curl localhost
+ 
+
+
+ 
+
+
+
+
+
 
 
 Resource Management & Auto Scaling
@@ -1722,42 +1804,6 @@ kubectl exec -it demo-pod -- bash
 
  ab -n 2000 -c 5 http://ngnix/
  
-
-
-Ingress:
----------
-
-Step 1:
-
-Nginx Ingress Controller
-Applying below resource:
-
-# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
-
-
-delete old cluster to create new one:
-
- kind delete cluster --name dev-cluster
-
-create new cluster:
- kind create cluster --config .\01-cluster.yaml
- 
- docker ps
- 
- Example1:02-simple-ingress
- -------------------
- 
-  kubectl get ing
-  curl localhost
- 
-
-
- 
-
-
-
-
-
 
 
 ref:

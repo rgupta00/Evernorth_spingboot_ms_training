@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    template:
+      default-topic: productapp-topic
+    producer:
+      bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    admin:
+      properties:
+        bootstrap.servers: localhost:9092,localhost:9093,localhost:9094
+  application:
+    name: productapp-producer
+server:
+  port: 8081

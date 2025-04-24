@@ -120,9 +120,11 @@ public class TestEmployee {
 @Disabled :    This annotation is used to specify Ignore one Test-method 
                while executing test-case (do not execute test method)
 
+DevOps
+dev --- test --pre prod --- prod
 
 @Tag 
-----------
+-----
 
 	These are used to filter test methods for execution in different environments.
 
@@ -926,6 +928,19 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
 
+
+Spring boot mysql config:
+-----------------------------
+spring.datasource.url=jdbc:mysql://localhost:3306/demoms?createDatabaseIfNotExist=true&useSSL=true
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
 
 
 step 2: configure test containers
