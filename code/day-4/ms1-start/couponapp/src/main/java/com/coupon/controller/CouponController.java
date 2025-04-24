@@ -15,7 +15,6 @@ public class CouponController {
     private String info;
 
 
-
     public CouponController(CouponService couponService) {
         this.couponServicel = couponService;
     }
@@ -24,6 +23,8 @@ public class CouponController {
         return info;
     }
     //http://localhost:8083/coupon/SUP10
+
+
     @GetMapping("coupon/{couponCode}")
     public Coupon getCouponByCode(@PathVariable String couponCode) {
         return couponServicel.getCouponByCode(couponCode);

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="productapp" />
+        <module name="euraka" />
         <module name="couponapp" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="couponapp" options="-parameters" />
+      <module name="euraka" options="-parameters" />
       <module name="productapp" options="-parameters" />
     </option>
   </component>

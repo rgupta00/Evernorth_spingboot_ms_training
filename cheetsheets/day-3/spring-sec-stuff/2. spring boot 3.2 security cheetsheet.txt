@@ -484,7 +484,7 @@ using Principle
 Spring security jwt:
 -------------------
 step 1: put maven dependency
-<dependency>
+        <dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-api</artifactId>
 			<version>0.11.5</version>
