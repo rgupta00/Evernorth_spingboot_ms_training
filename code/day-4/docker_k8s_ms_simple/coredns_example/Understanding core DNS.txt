@@ -53,7 +53,8 @@ refer code sample attached
 Step 1: Create kind cluster
 
  kind create cluster --config cls.yaml
- 
+ kubectl get service -n kube-system -o wide|grep core
+
  to delete cluster:
   kind delete cluster --name dev-cluster
   
@@ -72,5 +73,5 @@ Exploring core DNS
  kubectl get all -n kube-system -o wide|grep core
  kubectl -n kube-system describe service/kube-dns
  
-
+https://chatgpt.com/c/680af05d-92bc-8004-a1bd-dedeb9e20fe9
 

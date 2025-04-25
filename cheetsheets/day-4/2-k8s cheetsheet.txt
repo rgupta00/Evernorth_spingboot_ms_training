@@ -1051,7 +1051,6 @@ spec:
 -----------------------
 	Service
 -----------------------
-
 	* Logical abstraction for a set of pods
 	* A single reliable network endpoints to access pods
 		statble IP address

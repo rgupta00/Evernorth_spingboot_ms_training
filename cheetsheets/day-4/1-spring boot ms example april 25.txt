@@ -42,6 +42,12 @@ Eureka server: 8070
 api gateway: 8072
 Zipkin: 9411
 
+open feign : declartive rest client
+
+
+
+
+
 Step 1: import given code, run both coupons and product service
 
 Step 2: Apply OpenFeign to products microservice to call coupons microservice:
@@ -175,6 +181,11 @@ spring:
 server:
   port: 8888
   
+spring.cloud.config.server.git.uri=file:///C:/propfiles
+spring.cloud.config.server.git.clone-on-start=true
+spring.cloud.config.server.git.default-label=master
+
+
 step 3: create config client:
 ----------------------------
 spring:
@@ -186,6 +197,27 @@ spring:
   application:
     name:
   
+
+
+@RefreshScope
+-----------------------
+	to automatically pick up changes from the Config Server without restarting your app.
+
+What does @RefreshScope do?
+	It tells Spring to recreate the bean when a refresh is triggered (typically via an /actuator/refresh call).
+	This means any changes from the config server will be reloaded dynamically into the bean.
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+		
+		
+Call the endpoint (manually or via automation):
+-----------------------------------------------
+POST /actuator/refresh
+
 
 
 
@@ -346,6 +378,16 @@ resilience4j:
         #The wait-duration-in-open-state is the amount of time a circuit breaker remains open before switching to a half-open state
 		
 		
+
+resilience4j.circuitbreaker.configs.default.registerHealthIndicator=true
+resilience4j.circuitbreaker.configs.default.slidingWindowType=COUNT_BASED
+resilience4j.circuitbreaker.configs.default.slidingWindowSize=10
+resilience4j.circuitbreaker.configs.default.failureRateThreshold=50
+resilience4j.circuitbreaker.configs.default.waitDurationInOpenState=5s
+resilience4j.circuitbreaker.configs.default.permittedNumberOfCallsInHalfOpenState=3
+resilience4j.circuitbreaker.configs.default.automaticTransitionFromOpenToHalfOpenEnabled=true
+resilience4j.circuitbreaker.configs.default.minimum-number-of-calls=5
+
 		
 now we have to define fallback for feign client in product service
 -------------------------------------------------------------------
@@ -373,9 +415,6 @@ http://localhost:8082/actuator/circuitbreakers
 
 
 
-
-
-Now stop loan ms and observe the behaviour of the application
 
 
 Applying circuitbreaker to api gateway 

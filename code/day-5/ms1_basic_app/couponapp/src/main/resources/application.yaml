@@ -1,0 +1,33 @@
+server:
+  port: 8083
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active:
+      - "dev"
+  application:
+    name: coupons
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
+data:
+  info: default profile couponservice
+

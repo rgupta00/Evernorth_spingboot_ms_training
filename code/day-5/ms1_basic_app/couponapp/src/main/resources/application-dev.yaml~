@@ -1,0 +1,21 @@
+server:
+  port: 8083
+spring:
+  profiles:
+    active:
+      - "default"
+  application:
+    name: coupons
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+data:
+  info: default profile couponservice
+

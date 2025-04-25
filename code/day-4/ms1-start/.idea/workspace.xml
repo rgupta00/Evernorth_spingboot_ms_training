@@ -5,87 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="876f1fd8-a155-42a3-b096-6a8e0c5ee356" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../backup/.idea/ms1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ms1-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../cheetsheets/day-3/spring-sec-stuff/2. spring boot 3.2 security cheetsheet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cheetsheets/day-3/spring-sec-stuff/2. spring boot 3.2 security cheetsheet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/src/main/java/com/secapp/Secappv1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/src/main/java/com/secapp/Secappv1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/src/main/java/com/secapp/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-3/03_security/secappv1-start/src/main/java/com/secapp/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ms1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/couponapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/CouponappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/CouponappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/controller/CouponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couponapp/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/ProductappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/ProductappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/proxyservice/CouponServiceProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productapp/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/ms1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/src/main/java/com/configserver/ConfigserverApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/configserver/src/test/java/com/configserver/ConfigserverApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/java/com/coupon/CouponappApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/java/com/coupon/controller/CouponController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/java/com/coupon/dto/Coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/java/com/coupon/service/CouponService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/java/com/coupon/service/CouponServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/resources/application-dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/resources/application-qa.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/couponapp/src/test/java/com/coupon/CouponappApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/src/main/java/com/eureaka/EureakaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/eureaka/src/test/java/com/eureaka/EureakaApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/ProductappApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/dto/Coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/dto/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/exception/ProductNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/proxyservice/CouponServiceProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/java/com/productapp/service/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/resources/application-dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/resources/application-qa.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/productapp/src/test/java/com/productapp/ProductappApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms1/simple example.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day-5/imp_misc_examples/kafka_examples/ex1/.idea/ex1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day-5/imp_misc_examples/kafka_examples/ex1/productapp-producer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day-5/ms1_basic_app/.idea/ms1_basic_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../cheetsheets/day-4/1-spring boot ms example april 25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cheetsheets/day-4/1-spring boot ms example april 25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../cheetsheets/day-4/2-k8s cheetsheet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cheetsheets/day-4/2-k8s cheetsheet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../cheetsheets/day-5/microservice final project step by step.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cheetsheets/day-5/microservice final project step by step.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_k8s_ms_simple/coredns_example/Understanding core DNS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_k8s_ms_simple/coredns_example/Understanding core DNS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/data/tempo/blocks/single-tenant/index.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/data/tempo/blocks/single-tenant/index.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/inventory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/inventory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/inventory/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/inventory/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/notifications/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/notifications/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/notifications/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/products/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/products/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-5/version1/products/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-5/version1/products/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pdf/6-Spring cloud.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pdf/Spring Boot + Microservice 2Dyas workshop.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../toc_roadmap/.~lock.Evernorth-Spring_boot_microserviceAppliaction_training-5Days - Copy.xlsx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../toc_roadmap/Evernorth-Spring_boot_microserviceAppliaction_training-5Days - Copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../toc_roadmap/Evernorth-Spring_boot_microserviceAppliaction_training-5Days - Copy.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,9 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2wApKHSQ0XL5atD2xfsAfJzlvTD" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -113,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CouponappApplication.executor": "Run",
-    "Application.EurakaApplication.executor": "Run",
-    "Application.ProductappApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Evernorth_spingboot_ms_training_code/code/day-4/ms1-start"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CouponappApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurakaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductappApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Evernorth_spingboot_ms_training_code/code/day-5/version1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.EurakaApplication">
     <configuration name="CouponappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.coupon.CouponappApplication" />
